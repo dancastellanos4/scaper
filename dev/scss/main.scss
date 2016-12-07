@@ -72,8 +72,9 @@ html body {
 .estimate{
   padding: 1em !important;
   margin-top:1em;
-  margin-bottom: 1.25em;
+  margin-bottom: 1.8em;
 }
+
 .status-text{
   padding-bottom: 1em;
 }
@@ -92,15 +93,19 @@ html body {
 }
 
 .button-area{
-  padding:0 !important;
+  padding:0;
   .threeCol{
     width:32.333% !important;
-    padding-left: 0 !important;
+    padding-left: 0;
     text-align: center;
   }
   input{
     position:absolute;
     top:-200px !important;
+  }
+  label{
+    height: 8em !important;
+    padding: 1em !important;
   }
 }
 
@@ -124,6 +129,11 @@ h2{
 }
 h3{
   font-size: 1.8rem !important;
+}
+
+h4{
+  font-size: 1.6em !important;
+  font-weight: 300 !important;
 }
 
 h5 {
@@ -183,6 +193,7 @@ h6{
   margin-bottom: 1px !important;
   padding-bottom: 0px;
   border-bottom: 1px solid #666;
+  position:relative;
 }
 
 .grey-area{
@@ -221,6 +232,14 @@ h6{
   @extend .skytext;
   font-size: 2em;
   line-height: 1.2em;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 50%;
+  margin: auto;
+  height: 44%;
 }
 
 .bubbles{

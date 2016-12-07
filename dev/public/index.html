@@ -58,7 +58,7 @@
         <div class="center-align skytext-app">Cognitive Insurance</div>
     </div>
     <div class="row grey-area">
-        <h5 class="center-align instructions blue-grey-text text-lighten-1">explanation</h5>
+        <h5 class="center-align instructions blue-grey-text ">explanation</h5>
         <div id="taskList" class="card col s10 offset-s1">
             <ul id="task-list" class="input-list">
             </ul>
@@ -81,16 +81,16 @@
             <h6 class="status-text blue-grey-text text-lighten-1 center-align">Quote</h6>
             <h2 class="estimate-text center-align">$15-$25</h2>
         </div>
-        <h5 class="center-align instructions blue-grey-text text-lighten-1">Select one:</h5>
+        <h5 class="center-align instructions blue-grey-text ">Select one:</h5>
         <div class="button-area col s10 row offset-s1">
                 <input id="level-pro" title="Pro" name="level" type="radio" />
-                <label for="level-pro" class="card col s4 threeCol">Pro</label>
+                <label for="level-pro" class="card col s4 threeCol"><i class="material-icons medium">local_shipping</i><h4>Pro</h4></label>
 
                 <input id="level-amateur" title="Amateur" name="level" type="radio"   />
-                <label for="level-amateur" class="card col s4 margin-left-1p threeCol">Amateur</label>
+                <label for="level-amateur" class="card col s4 margin-left-1p threeCol"><i class="material-icons medium">person</i><h4>Amateur</h4></label>
 
                 <input id="level-asap" title="Asap" name="level" type="radio"  />
-                <label for="level-asap" class="card col s4 margin-left-1p threeCol">ASAP</label>
+                <label for="level-asap" class="card col s4 margin-left-1p threeCol"><i class="material-icons medium">query_builder</i><h4>ASAP</h4></label>
         </div>
 
         <!-- bottom buttons -->
@@ -111,7 +111,7 @@
             <h6 class="status-text blue-grey-text text-lighten-1 center-align">Quote</h6>
             <h2 class="estimate-text center-align">$15-$25</h2>
         </div>
-        <h5 class="center-align instructions blue-grey-text text-lighten-1 center-align">Select whose tools to use for each task:</h5>
+        <h5 class="center-align instructions blue-grey-text center-align">Select whose tools to use for each task:</h5>
 
         <div id="toolList" class="card col s10 offset-s1">
             <div class="button-area">
@@ -131,11 +131,11 @@
         <!-- Confirmation Modal -->
         <div id="modal1" class="modal bottom-sheet">
             <div class="modal-content">
-                <h4>Request Confirmation</h4>
-                <p>Confirm to request a Scaper to perform the selected tasks for the price shown.</p>
+                <h4 class="blue-grey-text">Request Confirmation</h4>
+                <p class="blue-grey-text">Confirm to request a Scaper to perform the selected tasks for the price shown.</p>
             </div>
             <div class="modal-footer">
-                <a href="#!" class=" modal-action modal-close waves-effect waves-chartreuse btn-flat">Confirm</a>
+                <a href="#!" class=" modal-action modal-close waves-effect waves-chartreuse btn-flat" id="confirm-request">Confirm</a>
                 <a href="#!" class=" modal-action modal-close waves-effect waves-light btn-flat">Cancel</a>
             </div>
         </div>
@@ -144,6 +144,26 @@
     </div>
 </div>
 
+
+<!-- Scaper on the way -->
+<div id="page-scaper-omw" class="page hide-page">
+    <div class="row mini-sky">
+        <div class="center-align skytext-app">Cognitive Insurance</div>
+    </div>
+    <div class="row grey-area">
+        <div  class="card col s10 offset-s1 estimate">
+            <h6 class="status-text blue-grey-text text-lighten-1 center-align">Quote</h6>
+            <h2 class="estimate-text center-align">$15-$25</h2>
+        </div>
+        <h5 class="center-align instructions blue-grey-text center-align">Select whose tools to use for each task:</h5>
+
+        <div id="XXX" class="card col s10 offset-s1">
+
+        </div>
+
+
+    </div>
+</div>
 
 
 
