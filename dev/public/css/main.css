@@ -1,0 +1,197 @@
+html body {
+  overflow: hidden; }
+
+.page {
+  height: 100vh; }
+
+.hide-page {
+  display: none; }
+
+.grey-area {
+  height: 80vh; }
+
+/* landing page */
+#request-scaper {
+  margin-top: 13vh; }
+
+#find-work {
+  margin-top: 7vh; }
+
+/* task list style */
+#taskList, #toolList {
+  padding: 0; }
+
+.selected, .button-area input:checked + label {
+  background-color: #ccff90;
+  color: #000; }
+
+/* check fix */
+[type="checkbox"]:checked + label:before {
+  top: -2px;
+  border-right: 5px solid #1b5e20;
+  border-bottom: 5px solid #1b5e20; }
+
+.selected label, .button-area input:checked + label label {
+  color: #000 !important; }
+
+.input-list {
+  margin: 0; }
+  .input-list li {
+    cursor: pointer;
+    padding: 10px 20px;
+    border-bottom: 1px solid #cfd8dc; }
+    .input-list li label {
+      font-size: 1.2em;
+      width: 100%; }
+    .input-list li .task-icon {
+      float: right; }
+
+[type="checkbox"] + label:before {
+  margin-top: 3.5px;
+  border-color: #a5a5a5; }
+
+/* Level page style */
+.estimate {
+  padding: 1em !important;
+  margin-top: 1em;
+  margin-bottom: 1.25em; }
+
+.status-text {
+  padding-bottom: 1em; }
+
+/* hide radio buttons */
+[type="radio"]:not(:checked) + label:before, [type="radio"]:not(:checked) + label:after {
+  display: none !important; }
+
+[type="radio"]:checked + label:after, [type="radio"].with-gap:checked + label:before, [type="radio"].with-gap:checked + label:after {
+  display: none !important; }
+
+.button-area {
+  padding: 0 !important; }
+  .button-area .threeCol {
+    width: 32.333% !important;
+    padding-left: 0 !important;
+    text-align: center; }
+  .button-area input {
+    position: absolute;
+    top: -200px !important; }
+
+/* Supplies page */
+/* Typography */
+body {
+  font-family: 'Lato',sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif; }
+
+h2 {
+  font-weight: 400 !important;
+  font-size: 4rem !important; }
+
+h3 {
+  font-size: 1.8rem !important; }
+
+h5 {
+  font-weight: 300 !important;
+  font-size: 1.25em !important; }
+
+h6 {
+  font-weight: 400;
+  font-size: 1em; }
+
+.instructions {
+  padding-top: 3vh;
+  padding-bottom: 1vh; }
+
+.btn-small {
+  height: 25px;
+  line-height: 24px;
+  font-size: 1rem; }
+
+.btn-small i {
+  font-size: 1rem; }
+
+/* margins */
+.margin-bottom-1 {
+  margin-bottom: 1em; }
+
+.margin-bottom-2 {
+  margin-bottom: 2em; }
+
+.margin-left-1p {
+  margin-left: 1.5% !important; }
+
+/* Sky  headers*/
+.sky {
+  margin-bottom: 1px;
+  padding-bottom: 0;
+  background: #000; }
+
+.mini-sky {
+  height: 25%;
+  background: #000;
+  margin-bottom: 1px !important;
+  padding-bottom: 0px;
+  border-bottom: 1px solid #666; }
+
+.grey-area {
+  height: 75%;
+  background: #f1f1f1; }
+
+.bottom {
+  position: absolute;
+  bottom: 10px; }
+
+.grass {
+  background-image: url(../images/grasstile.png);
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: 75%; }
+
+.skytext, .skytext-app-title, .skytext-app {
+  font-family: 'OpenSans',sans-serif;
+  color: #fff;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-weight: 600;
+  position: relative; }
+
+.skytext-app-title {
+  letter-spacing: 6px;
+  font-size: 3em; }
+
+.skytext-app {
+  font-size: 2em;
+  line-height: 1.2em; }
+
+.bubbles {
+  margin-top: 12em; }
+
+/* Sections */
+.segment {
+  padding: 7em 0 10em;
+  margin-bottom: 1px !important;
+  height: 25em;
+  background-color: #f5f5f7;
+  border-top: 1px solid #c9cbce; }
+
+.waves-effect.waves-chartreuse .waves-ripple {
+  /* The alpha value allows the text and background color
+  of the button to still show through. */
+  background-color: rgba(127, 255, 0, 0.625); }
+
+/* responsiveness */
+/*small*/
+@media (max-width: 600px) {
+  body {
+    font-size: 16px; } }
+
+/* medium */
+@media (min-width: 601px) and (max-width: 992px) {
+  body {
+    font-size: 18px; } }
+
+/* large */
+@media (min-width: 993px) {
+  body {
+    font-size: 20px; } }

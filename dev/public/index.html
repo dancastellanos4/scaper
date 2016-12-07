@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scaper</title>
+    <meta name="description" content="Scaper">
+    <meta name="author" content="Danny Enterprizes">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Open+Sans:300,400,600" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Import custom css -->
+    <link rel="stylesheet" href="css/main.css">
+
+
+</head>
+<body>
+
+<!-- landing page -->
+<div id="page-start" class="page sky">
+    <div id="" class="row grass page">
+        <a href="#" data-activates="slide-out" class="button-collapse"><i class="small material-icons ">menu</i></a>
+        <div class="center-align skytext-app-title">Amelia</div>
+        <a class="waves-effect waves-light btn deep-orange darken-4 col s6 offset-s3" id="request-scaper">Test1</a>
+        <a class="waves-effect waves-light btn blue-grey darken-4 col s6 offset-s3" id="find-work">Test 2</a>
+    </div>
+
+</div>
+
+<!-- menu -->
+    <ul id="slide-out" class="side-nav">
+        <li><div class="userView">
+            <div class="background">
+                <img src="images/office.jpg">
+            </div>
+            <a href="#!user"><img class="circle" src="images/yuna.jpg"></a>
+            <a href="#!name"><span class="white-text name">John Doe</span></a>
+            <a href="#!email"><span class="white-text email">dancastellanos4@gmail.com</span></a>
+        </div></li>
+        <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+        <li><a href="#!">Second Link</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="subheader">Subheader</a></li>
+        <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+    </ul>
+
+</div>
+
+<!-- task list -->
+<div id="page-task-list" class="page hide-page">
+    <div class="row mini-sky">
+        <div class="center-align skytext-app">Cognitive Insurance</div>
+    </div>
+    <div class="row grey-area">
+        <h5 class="center-align instructions blue-grey-text text-lighten-1">explanation</h5>
+        <div id="taskList" class="card col s10 offset-s1">
+            <ul id="task-list" class="input-list">
+            </ul>
+        </div>
+<!-- bottom buttons -->
+        <div class="bottom col s12">
+            <a class="waves-effect waves-light btn btn-flat col s4 offset-s1 back-button" id="task-back">Back</a>
+            <a class="waves-effect waves-light btn deep-orange darken-4 col s6 next-button" id="tasks-done">Next</a>
+        </div>
+    </div>
+</div>
+
+<!-- scaper level -->
+<div id="page-scaper-level" class="page hide-page">
+    <div class="row mini-sky">
+        <div class="center-align skytext-app">Cognitive Insurance</div>
+    </div>
+    <div class="row grey-area">
+        <div  class="card col s10 offset-s1 estimate">
+            <h6 class="status-text blue-grey-text text-lighten-1 center-align">Quote</h6>
+            <h2 class="estimate-text center-align">$15-$25</h2>
+        </div>
+        <h5 class="center-align instructions blue-grey-text text-lighten-1">Select one:</h5>
+        <div class="button-area col s10 row offset-s1">
+                <input id="level-pro" title="Pro" name="level" type="radio" />
+                <label for="level-pro" class="card col s4 threeCol">Pro</label>
+
+                <input id="level-amateur" title="Amateur" name="level" type="radio"   />
+                <label for="level-amateur" class="card col s4 margin-left-1p threeCol">Amateur</label>
+
+                <input id="level-asap" title="Asap" name="level" type="radio"  />
+                <label for="level-asap" class="card col s4 margin-left-1p threeCol">ASAP</label>
+        </div>
+
+        <!-- bottom buttons -->
+        <div class="bottom col s12">
+            <a class="waves-effect waves-light btn btn-flat col s4 offset-s1 back-button" id="level-back">Back</a>
+            <a class="waves-effect waves-light btn deep-orange darken-4 col s6 next-button" id="scaper-level-done">Next</a>
+        </div>
+    </div>
+</div>
+
+<!-- scaper supplies -->
+<div id="page-scaper-supplies" class="page hide-page">
+    <div class="row mini-sky">
+        <div class="center-align skytext-app">Cognitive Insurance</div>
+    </div>
+    <div class="row grey-area">
+        <div  class="card col s10 offset-s1 estimate">
+            <h6 class="status-text blue-grey-text text-lighten-1 center-align">Quote</h6>
+            <h2 class="estimate-text center-align">$15-$25</h2>
+        </div>
+        <h5 class="center-align instructions blue-grey-text text-lighten-1 center-align">Select whose tools to use for each task:</h5>
+
+        <div id="toolList" class="card col s10 offset-s1">
+            <div class="button-area">
+                <a class="btn btn-flat btn-small s6 col waves-effect waves-light black-text">Clear all</a>
+                <a class="btn btn-flat btn-small s6 col waves-effect waves-chartreuse black-text">Select all</a>
+            </div>
+            <ul class="input-list">
+                <!-- List has to be generated based on chosen tasks -->
+            </ul>
+        </div>
+
+        <!-- bottom buttons -->
+        <div class="bottom col s12">
+            <a class="waves-effect waves-light btn btn-flat col s4 offset-s1 back-button" id="supplies-back">Back</a>
+            <a class="waves-effect waves-light btn deep-orange darken-4 col s6 next-button" id="scaper-supplies-done" href="#modal1">Request</a>
+        </div>
+        <!-- Confirmation Modal -->
+        <div id="modal1" class="modal bottom-sheet">
+            <div class="modal-content">
+                <h4>Request Confirmation</h4>
+                <p>Confirm to request a Scaper to perform the selected tasks for the price shown.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class=" modal-action modal-close waves-effect waves-chartreuse btn-flat">Confirm</a>
+                <a href="#!" class=" modal-action modal-close waves-effect waves-light btn-flat">Cancel</a>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+
+
+
+
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<!-- delete local once live
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>  -->
+<script src="js/materialize.min.js"></script>
+<script src="js/scripts.js"></script>
+<!--<script src="../js/handlebars-v4.0.5.js"></script>-->
+
+</body>
+</html>

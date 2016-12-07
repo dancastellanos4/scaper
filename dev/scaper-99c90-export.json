@@ -1,0 +1,69 @@
+{
+  "tasks" : [{
+    "taskname" : "Mow Lawn",
+    "tasktool" : "mower"
+  },{
+    "taskname" : "Plow Driveway",
+    "tasktool" : "Plow",
+    "taskseason" : "winter"
+  }
+  ],
+  "users" : [ {
+    "email" : "dcastellanos4@gmail.com",
+    "first_name" : "Daniel",
+    "home-tools" : true,
+    "homeowner" : true,
+    "last_name" : "Castellanos",
+    "s-byo" : true,
+    "s-level" : "amateur",
+    "scaper" : true,
+    "username" : "dcastellanos4",
+    "tools" : {
+      "hedgetrimmers" : true,
+      "lawnmower" : true,
+      "plow" : false,
+      "rake" : true,
+      "shovel" : true,
+      "trow" : true,
+      "weedwhacker" : true
+    }
+  }, {
+    "email" : "jackxx89@msn.com",
+    "first_name" : "Jackie",
+    "home-tools" : true,
+    "homeowner" : true,
+    "last_name" : "Prevocki",
+    "s-byo" : true,
+    "s-level" : "amateur",
+    "scaper" : true,
+    "username" : "jprosnow89",
+    "tools" : {
+      "hedgetrimmers" : true,
+      "lawnmower" : true,
+      "plow" : false,
+      "rake" : true,
+      "shovel" : true,
+      "trow" : true,
+      "weedwhacker" : true
+    }
+
+  }, {
+    "email" : "bhartman12345@gmail.com",
+    "first_name" : "Bruce",
+    "home-tools" : true,
+    "homeowner" : true,
+    "last_name" : "Prevocki",
+    "scaper" : false,
+    "username" : "bhartman12345",
+    "tools" : {
+      "hedgetrimmers" : true,
+      "lawnmower" : true,
+      "plow" : false,
+      "rake" : true,
+      "shovel" : true,
+      "trow" : true,
+      "weedwhacker" : true
+    }
+
+  } ]
+}

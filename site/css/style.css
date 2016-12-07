@@ -1,0 +1,109 @@
+/* Typography */
+body{
+		font-family: 'Lato',sans-serif;
+}
+
+h2{
+	font-weight:200 !important;
+	font-size: 4.5rem !important;
+}
+
+h5 {
+	font-weight: 200 !important;
+	font-size:1.4em !important;
+}
+.stxt{
+	color:#0a3a4c;
+	font-weight: 400 !important;
+}
+
+/* margins */
+.marbot-1{
+	margin-bottom: 1em;
+}
+
+.marbot-2{
+	margin-bottom: 2em;
+}
+
+/* Sky  headers*/
+#sky {
+	margin-bottom: 1px;
+	padding-bottom: 0;
+	background: #1d70f4; /* Old browsers */
+	background: -moz-linear-gradient(-31deg,  #1d70f4 0%, #00a4fd 80%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-31deg,  #1d70f4 0%,#00a4fd 80%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(149deg,  #1d70f4 0%,#00a4fd 80%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d70f4', endColorstr='#00a4fd',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+#grass{
+	background-image: url(../scaperdir/grasstile.png);
+	background-repeat: repeat-x;
+	background-position: bottom;
+}
+
+
+#skytext {
+	font-family: 'OpenSans',sans-serif;
+	color:#fff;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	font-weight: 600;
+	letter-spacing: 10px;
+    position: relative;
+}
+
+.bubbles{
+	margin-top: 12em;
+}
+
+/* Sections */
+.segment{
+		padding: 7em 0 10em;
+	margin-bottom: 1px !important;
+	height: 25em;
+	background-color: #f5f5f7;
+	border-top: 1px solid #c9cbce;
+}
+
+.row{
+
+}
+
+/*small*/
+@media (max-width: 600px) {
+	body {font-size: 1em;}
+	#skytext {
+		height: 40em;
+		font-size: 5em;
+	    top: .9em;
+	}
+	#grass{
+	height: 40em;
+	}
+}
+
+/* medium */
+@media (min-width: 601px) and (max-width: 992px) {
+	body {}
+	#skytext {
+		height: 55em;
+		font-size: 7em;
+	    top: 1.1em;
+	}
+	#grass{
+	height: 55em;
+	}
+}
+/* large */
+@media (min-width: 993px) {
+	body {}
+	#skytext {
+		height: 50em;
+		font-size: 10em;
+	    top: .7em;
+	}
+	#grass{
+	height: 50em;
+	}
+}
