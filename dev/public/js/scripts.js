@@ -28,6 +28,7 @@ $(document).ready(function(){
 
 
 //  TEMP NAV
+//    HTML injection step 2
 //  page one transition
     $("#request-scaper, #task-back").click(function(){
         $("#page-start").toggle();
@@ -42,6 +43,11 @@ $(document).ready(function(){
     $("#scaper-level-done, #supplies-back").click(function(){
         $("#page-scaper-level").toggle();
         $("#page-scaper-supplies").toggle();
+    });
+    //page four transition
+    $('#confirm-request').click(function(){
+        $('#page-scaper-supplies').toggle();
+        $('#page-scaper-omw').toggle();
     });
 
 
