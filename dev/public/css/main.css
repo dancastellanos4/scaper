@@ -15,11 +15,13 @@ html body {
   margin-top: 7vh; }
 
 /* task list style */
-#taskList, #toolList {
-  padding: 0; }
+.checklist {
+  padding: 0 !important; }
+  .checklist ul {
+    max-height: 285px; }
 
 .selected, .button-area input:checked + label {
-  background-color: #ccff90;
+  background-color: #ccff90 !important;
   color: #000; }
 
 /* check fix */
@@ -32,13 +34,15 @@ html body {
   color: #000 !important; }
 
 .input-list {
-  margin: 0; }
+  margin: 0;
+  overflow: scroll; }
   .input-list li {
+    background-color: #f0fff5;
     cursor: pointer;
     padding: 10px 20px;
     border-bottom: 1px solid #cfd8dc; }
     .input-list li label {
-      font-size: 1.2em;
+      font-size: 1.1em;
       width: 100%; }
     .input-list li .task-icon {
       float: right; }
@@ -74,6 +78,7 @@ html body {
     position: absolute;
     top: -200px !important; }
   .button-area label {
+    background-color: #f0fff5;
     height: 8em !important;
     padding: 1em !important; }
 

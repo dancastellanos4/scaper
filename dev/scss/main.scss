@@ -21,11 +21,14 @@ html body {
 }
 
 /* task list style */
-#taskList, #toolList{
-  padding: 0;
+.checklist{
+  padding: 0 !important;
+  ul{
+    max-height: 285px;
+  }
 }
 .selected{
-  background-color: #ccff90;
+  background-color: #ccff90 !important;
   color:#000;
 }
 
@@ -42,13 +45,15 @@ html body {
 
 .input-list{
   margin:0;
+  overflow: scroll;
   li{
+    background-color: #f0fff5;
     cursor: pointer;
     padding: 10px 20px;
     border-bottom: 1px solid #cfd8dc;
 
     label{
-      font-size:1.2em;
+      font-size:1.1em;
       width:100%;
     }
 
@@ -101,6 +106,7 @@ html body {
     top:-200px !important;
   }
   label{
+    background-color: #f0fff5;
     height: 8em !important;
     padding: 1em !important;
   }

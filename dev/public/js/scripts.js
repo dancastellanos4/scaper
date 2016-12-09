@@ -26,7 +26,6 @@ $(document).ready(function(){
 
 
 
-
 //  TEMP NAV
 //    HTML injection step 2
 //  page one transition
@@ -48,6 +47,15 @@ $(document).ready(function(){
     $('#confirm-request').click(function(){
         $('#page-scaper-supplies').toggle();
         $('#page-scaper-omw').toggle();
+    });
+//    scaper workflow pages
+    $('#find-work, #signup-skill-back').click(function(){
+        $('#page-start').toggle();
+        $('#page-signup-scaper').toggle();
+    });
+    $('#signup-skill-done, #signup-tools-back').click(function(){
+        $('#page-signup-tools').toggle();
+        $('#page-signup-scaper').toggle();
     });
 
 

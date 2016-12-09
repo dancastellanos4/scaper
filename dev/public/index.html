@@ -50,8 +50,6 @@
         <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
     </ul>
 
-</div>
-
 <!-- task list -->
 <div id="page-task-list" class="page hide-page">
     <div class="row mini-sky">
@@ -59,7 +57,7 @@
     </div>
     <div class="row grey-area">
         <h5 class="center-align instructions blue-grey-text ">explanation</h5>
-        <div id="taskList" class="card col s10 offset-s1">
+        <div class="card col s10 offset-s1 checklist">
             <ul id="task-list" class="input-list">
             </ul>
         </div>
@@ -113,7 +111,7 @@
         </div>
         <h5 class="center-align instructions blue-grey-text center-align">Select whose tools to use for each task:</h5>
 
-        <div id="toolList" class="card col s10 offset-s1">
+        <div id="" class="card col s10 offset-s1 checklist">
             <div class="button-area">
                 <a class="btn btn-flat btn-small s6 col waves-effect waves-light black-text">Clear all</a>
                 <a class="btn btn-flat btn-small s6 col waves-effect waves-chartreuse black-text">Select all</a>
@@ -168,15 +166,92 @@
             <h6 class="status-text blue-grey-text text-lighten-1 center-align">Quote</h6>
             <h2 class="estimate-text center-align">$15-$25</h2>
         </div>
-
-
-        </div>
-
-
+    </div>
     </div>
 </div>
 
+<!-- scaper signup -->
+<div id="page-signup-scaper" class="page hide-page">
+    <div class="row mini-sky">
+        <div class="center-align skytext-app">
+            What's your skill level?
+        </div>
+    </div>
+    <div class="row grey-area">
+        <h5 class="center-align instructions blue-grey-text ">I am a(n):</h5>
+        <div class="button-area col s10 row offset-s1">
+            <input id="signup-level-pro" title="Pro" name="signup-level" type="radio" />
+            <label for="signup-level-pro" class="card col s4 offset-s1 threeCol"><i class="material-icons medium">local_shipping</i><h6>Pro</h6></label>
 
+            <input id="signup-level-amateur" title="Amateur" name="signup-level" type="radio"   />
+            <label for="signup-level-amateur" class="card col s4 offset-s2 threeCol"><i class="material-icons medium">person</i><h6>Amateur</h6></label>
+        </div>
+        <div class=" card col s10 offset-s1">
+            <p class="flow-text blue-grey-text">
+                Professional Scapers are those who  own and transport all equipment just as traditional landscapers would.
+                <strong>This requires the ability to perform ALL standard yard related tasks.</strong>
+            </p>
+        </div>
+        <!-- bottom buttons -->
+        <div class="bottom col s12">
+            <a class="waves-effect waves-light btn btn-flat col s4 offset-s1 back-button" id="signup-skill-back">Back</a>
+            <a class="waves-effect waves-light btn blue-grey darken-4 col s6 next-button" id="signup-skill-done">Next</a>
+        </div>
+    </div>
+</div>
+<!-- scaper singup tools -->
+<div id="page-signup-tools" class="page hide-page">
+    <div class="mini-sky row">
+        <div class="skytext-app center-align">
+            What tools do you own?
+        </div>
+    </div>
+    <div class="grey-area row">
+        <h5 class="center-align instructions blue-grey-text">I own:</h5>
+        <div id="" class="card col s10 offset-s1 checklist">
+            <ul id="scaper-tools-owned" class="input-list">
+                <li>
+                    <input class="checkbox" type="checkbox" name="transportation" id="transportation-scaper-signup">
+                    <label for="transportation-scaper-signup">Transportation</label>
+                </li>
+                <li>
+                    <input class="checkbox" type="checkbox" name="mower" id="mower-scaper-signup">
+                    <label for="-scaper-signup">Mower</label>
+                </li>
+                <li>
+                    <input class="checkbox" type="checkbox" name="pruning" id="pruning-scaper-signup">
+                    <label for="pruning-scaper-signup">Sheers / Pruners</label>
+                </li>
+                <li>
+                    <input class="checkbox" type="checkbox" name="whacker" id="whacker-scaper-signup">
+                    <label for="whacker-scaper-signup">Weed Whacker / Hedge Trimmer</label>
+                </li>
+                <li>
+                    <input class="checkbox" type="checkbox" name="mower" id="-scaper-signup">
+                    <label for="-scaper-signup">Mower</label>
+                </li>
+                <li>
+                    <input class="checkbox" type="checkbox" name="mower" id="-scaper-signup">
+                    <label for="-scaper-signup">Mower</label>
+                </li>
+                <li>
+                    <input class="checkbox" type="checkbox" name="mower" id="-scaper-signup">
+                    <label for="-scaper-signup">Mower</label>
+                </li>
+                <li>
+                    <input class="checkbox" type="checkbox" name="mower" id="-scaper-signup">
+                    <label for="-scaper-signup">Mower</label>
+                </li>
+            </ul>
+        </div>
+        <p class="blue-grey-text center-align">*Scroll to see all options</p>
+        <!-- bottom buttons -->
+        <div class="bottom col s12">
+            <a class="waves-effect waves-light btn btn-flat col s4 offset-s1 back-button" id="signup-tools-back">Back</a>
+            <a class="waves-effect waves-light btn blue-grey darken-4 col s6 next-button" id="signup-tools-done">Next</a>
+        </div>
+    </div>
+</div>
 
 
 
