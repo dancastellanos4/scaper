@@ -15,8 +15,18 @@
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+
     <!-- Import custom css -->
-    <link rel="stylesheet" href="css/main.css">
+    <!--<link rel="stylesheet" href="css/main.css">-->
+
+
+    <!--COMPASS-->
+    <link href="../stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="../stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+    <!--[if IE]>
+    <link href="../stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <![endif]-->
 
 
 </head>
@@ -24,7 +34,7 @@
 
 <!-- landing page -->
 <div id="page-start" class="page sky">
-    <div id="" class="row grass page">
+    <div class="row grass page">
         <a href="#" data-activates="slide-out" class="button-collapse"><i class="small material-icons ">menu</i></a>
         <div class="center-align skytext-app-title">Amelia</div>
         <a class="waves-effect waves-light btn deep-orange darken-4 col s6 offset-s3" id="request-scaper">Test1</a>
@@ -111,7 +121,7 @@
         </div>
         <h5 class="center-align instructions blue-grey-text center-align">Select whose tools to use for each task:</h5>
 
-        <div id="" class="card col s10 offset-s1 checklist">
+        <div class="card col s10 offset-s1 checklist">
             <div class="button-area">
                 <a class="btn btn-flat btn-small s6 col waves-effect waves-light black-text">Clear all</a>
                 <a class="btn btn-flat btn-small s6 col waves-effect waves-chartreuse black-text">Select all</a>
@@ -140,6 +150,66 @@
 
 
     </div>
+</div>
+
+<!-- FTUL -->
+<div id="page-homeowner-signup" class="page hide-page">
+    <div class="row mini-sky">
+        <div class="center-align skytext-app">Sign up for Scaper first</div>
+    </div>
+
+    <div class="row grey-area">
+        <!-- already member-->
+
+        <!-- can we check if they are already a member before loading this page?-->
+        <!--<h5 class="center-align instructions blue-grey-text">Already a member?</h5>-->
+        <!--<a class="waves-effect waves-light btn light-blue darken-2 col s8 offset-s2" id="h-sign-in" href="#">Sign in</a>-->
+
+        <!-- signup form for homeowner -->
+        <div class="card col s10 offset-s1 checklist ">
+            <div id="signup-page-homeonwer" class="input-list">
+                <div class="input-field s12 ">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="fname" type="text" class="validate">
+                    <label for="fname">First Name</label>
+                </div>
+                <div class="input-field s12 ">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="lname" type="text" class="validate">
+                    <label for="lname">Last Name</label>
+                </div>
+                <div class="input-field s12 ">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="username" type="email" class="validate">
+                    <label for="username">email</label>
+                </div>
+                <div class="input-field s12 ">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="cc" type="email" class="validate">
+                    <label for="cc">email</label>
+                </div>
+
+                <div class="input-field s6 ">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="ccsec" type="number" maxlength="3" class="validate">
+                    <label for="ccsec">Security Code</label>
+                </div>
+                <div class="input-field s6 ">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="ccexp" type="date" class="datepicker">
+                    <label for="ccexp">Exp Date</label>
+                </div>
+
+        </div>
+    </div>
+
+
+    <!-- bottom buttons -->
+        <div class="bottom col s12">
+            <a class="waves-effect waves-light btn deep-orange darken-4 col s12 next-button" id="submit-h-signup" href="#">Signup and request Scaper</a>
+        </div>
+    </div>
+
 </div>
 
 <!-- Scaper on the way -->
@@ -216,7 +286,7 @@
                 </li>
                 <li>
                     <input class="checkbox" type="checkbox" name="mower" id="mower-scaper-signup">
-                    <label for="-scaper-signup">Mower</label>
+                    <label for="mower-scaper-signup">Mower</label>
                 </li>
                 <li>
                     <input class="checkbox" type="checkbox" name="pruning" id="pruning-scaper-signup">
@@ -227,20 +297,20 @@
                     <label for="whacker-scaper-signup">Weed Whacker / Hedge Trimmer</label>
                 </li>
                 <li>
-                    <input class="checkbox" type="checkbox" name="mower" id="-scaper-signup">
-                    <label for="-scaper-signup">Mower</label>
+                    <input class="checkbox" type="checkbox" name="mower" id="a-scaper-signup">
+                    <label for="a-scaper-signup">Mower</label>
                 </li>
                 <li>
-                    <input class="checkbox" type="checkbox" name="mower" id="-scaper-signup">
-                    <label for="-scaper-signup">Mower</label>
+                    <input class="checkbox" type="checkbox" name="mower" id="b-scaper-signup">
+                    <label for="b-scaper-signup">Mower</label>
                 </li>
                 <li>
-                    <input class="checkbox" type="checkbox" name="mower" id="-scaper-signup">
-                    <label for="-scaper-signup">Mower</label>
+                    <input class="checkbox" type="checkbox" name="mower" id="c-scaper-signup">
+                    <label for="c-scaper-signup">Mower</label>
                 </li>
                 <li>
-                    <input class="checkbox" type="checkbox" name="mower" id="-scaper-signup">
-                    <label for="-scaper-signup">Mower</label>
+                    <input class="checkbox" type="checkbox" name="mower" id="d-scaper-signup">
+                    <label for="d-scaper-signup">Mower</label>
                 </li>
             </ul>
         </div>

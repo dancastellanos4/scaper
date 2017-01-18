@@ -1,0 +1,346 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 8, ../sass/screen.scss */
+html body {
+  overflow: hidden;
+}
+
+/* line 12, ../sass/screen.scss */
+.page {
+  height: 100vh;
+}
+
+/* line 16, ../sass/screen.scss */
+.hide-page {
+  display: none;
+}
+
+/* landing page */
+/* line 21, ../sass/screen.scss */
+#request-scaper {
+  margin-top: 13vh;
+}
+
+/* line 25, ../sass/screen.scss */
+#find-work {
+  margin-top: 7vh;
+}
+
+/* task list style */
+/* line 30, ../sass/screen.scss */
+.checklist {
+  padding: 0 !important;
+}
+/* line 32, ../sass/screen.scss */
+.checklist ul {
+  max-height: 285px;
+}
+
+/* line 36, ../sass/screen.scss */
+.selected, .button-area input:checked + label {
+  background-color: #ccff90 !important;
+  color: #000;
+}
+
+/* check fix */
+/* line 42, ../sass/screen.scss */
+[type="checkbox"]:checked + label:before {
+  top: -2px;
+  border-right: 5px solid #1b5e20;
+  border-bottom: 5px solid #1b5e20;
+}
+
+/* line 48, ../sass/screen.scss */
+.selected label, .button-area input:checked + label label {
+  color: #000 !important;
+}
+
+/* line 52, ../sass/screen.scss */
+#signup-page-homeowner {
+  max-height: 50%;
+}
+
+/* line 56, ../sass/screen.scss */
+.input-list {
+  margin: 0;
+  overflow: scroll;
+  max-height: 275px;
+}
+/* line 60, ../sass/screen.scss */
+.input-list li {
+  background-color: #f0fff5;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-bottom: 1px solid #cfd8dc;
+}
+/* line 66, ../sass/screen.scss */
+.input-list li label {
+  font-size: 1.1em;
+  width: 100%;
+}
+/* line 71, ../sass/screen.scss */
+.input-list li .task-icon {
+  float: right;
+}
+
+/* line 77, ../sass/screen.scss */
+[type="checkbox"] + label:before {
+  margin-top: 3.5px;
+  border-color: #a5a5a5;
+}
+
+/* Level page style */
+/* line 84, ../sass/screen.scss */
+.estimate {
+  margin-top: 0 !important;
+  margin-bottom: 2vh !important;
+  float: none !important;
+  padding: 1em !important;
+}
+
+/* line 91, ../sass/screen.scss */
+.status-text {
+  padding-bottom: .8em;
+}
+
+/* hide radio buttons */
+/* line 96, ../sass/screen.scss */
+[type="radio"]:not(:checked) + label:before, [type="radio"]:not(:checked) + label:after {
+  display: none !important;
+}
+
+/* line 100, ../sass/screen.scss */
+[type="radio"]:checked + label:after, [type="radio"].with-gap:checked + label:before, [type="radio"].with-gap:checked + label:after {
+  display: none !important;
+}
+
+/* line 108, ../sass/screen.scss */
+.button-area {
+  padding: 0 !important;
+}
+/* line 110, ../sass/screen.scss */
+.button-area .threeCol {
+  width: 32.333% !important;
+  padding-left: 0;
+  text-align: center;
+}
+/* line 115, ../sass/screen.scss */
+.button-area input {
+  position: absolute;
+  top: -200px !important;
+}
+/* line 119, ../sass/screen.scss */
+.button-area label {
+  background-color: #f0fff5;
+  height: 8em !important;
+  padding: 1em !important;
+}
+/* line 124, ../sass/screen.scss */
+.button-area a {
+  background-color: #f0fff5;
+}
+
+/* Supplies page */
+/* Typography */
+/* line 134, ../sass/screen.scss */
+body {
+  font-family: 'Lato',sans-serif;
+}
+
+/* line 138, ../sass/screen.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* line 143, ../sass/screen.scss */
+h2 {
+  font-weight: 400 !important;
+  font-size: 3rem !important;
+}
+
+/* line 147, ../sass/screen.scss */
+h3 {
+  font-size: 1.8rem !important;
+}
+
+/* line 151, ../sass/screen.scss */
+h4 {
+  font-size: 1.6em !important;
+  font-weight: 300 !important;
+}
+
+/* line 156, ../sass/screen.scss */
+h5 {
+  font-weight: 300 !important;
+  font-size: 1.25em !important;
+}
+
+/* line 160, ../sass/screen.scss */
+h6 {
+  font-weight: 400;
+  font-size: 1.25em;
+}
+
+/* line 165, ../sass/screen.scss */
+p {
+  font-weight: 300;
+}
+
+/* line 169, ../sass/screen.scss */
+.instructions {
+  padding-top: 2vh;
+  padding-bottom: 1vh;
+}
+
+/* line 174, ../sass/screen.scss */
+.btn-small {
+  height: 25px;
+  line-height: 24px;
+  font-size: 1rem;
+}
+
+/* line 180, ../sass/screen.scss */
+.btn-small i {
+  font-size: 1rem;
+}
+
+/* margins */
+/* line 185, ../sass/screen.scss */
+.margin-bottom-1 {
+  margin-bottom: 1em;
+}
+
+/* line 189, ../sass/screen.scss */
+.margin-bottom-2 {
+  margin-bottom: 2em;
+}
+
+/* line 193, ../sass/screen.scss */
+.margin-left-1p {
+  margin-left: 1.5% !important;
+}
+
+/* Sky  headers*/
+/* line 199, ../sass/screen.scss */
+.sky {
+  margin-bottom: 1px;
+  padding-bottom: 0;
+  background: #1d70f4;
+  /* Old browsers */
+  background: -moz-linear-gradient(-31deg, #1d70f4 0%, #00a4fd 80%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-31deg, #1d70f4 0%, #00a4fd 80%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(149deg, #1d70f4 0%, #00a4fd 80%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d70f4', endColorstr='#00a4fd',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+}
+
+/* line 211, ../sass/screen.scss */
+.mini-sky {
+  height: 25%;
+  background: #000;
+  margin-bottom: 1px !important;
+  padding-bottom: 0px;
+  border-bottom: 1px solid #666;
+  position: relative;
+}
+
+/* line 220, ../sass/screen.scss */
+.grey-area {
+  height: 75%;
+  background: #f1f1f1;
+  padding-top: 3vh;
+}
+
+/* line 226, ../sass/screen.scss */
+.bottom {
+  position: absolute;
+  bottom: 10px;
+}
+
+/* line 231, ../sass/screen.scss */
+.grass {
+  background-image: url(../public/images/grasstile.png);
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: 75%;
+}
+
+/* line 239, ../sass/screen.scss */
+.skytext, .skytext-app-title, .skytext-app {
+  font-family: 'OpenSans',sans-serif;
+  color: #fff;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-weight: 600;
+  position: relative;
+}
+
+/* line 247, ../sass/screen.scss */
+.skytext-app-title {
+  letter-spacing: 6px;
+  font-size: 3em;
+}
+
+/* line 253, ../sass/screen.scss */
+.skytext-app {
+  font-size: 2em;
+  line-height: 1.2em;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 50%;
+  margin: auto;
+  height: 44%;
+}
+
+/* line 267, ../sass/screen.scss */
+.bubbles {
+  margin-top: 12em;
+}
+
+/* Sections */
+/* line 272, ../sass/screen.scss */
+.segment {
+  padding: 7em 0 10em;
+  margin-bottom: 1px !important;
+  height: 25em;
+  background-color: #f5f5f7;
+  border-top: 1px solid #c9cbce;
+}
+
+/* line 280, ../sass/screen.scss */
+.waves-effect.waves-chartreuse .waves-ripple {
+  /* The alpha value allows the text and background color
+  of the button to still show through. */
+  background-color: rgba(127, 255, 0, 0.625);
+}
+
+/* responsiveness */
+/*small*/
+@media (max-width: 600px) {
+  /* line 290, ../sass/screen.scss */
+  body {
+    font-size: 16px;
+  }
+}
+/* medium */
+@media (min-width: 601px) and (max-width: 992px) {
+  /* line 296, ../sass/screen.scss */
+  body {
+    font-size: 18px;
+  }
+}
+/* large */
+@media (min-width: 993px) {
+  /* line 301, ../sass/screen.scss */
+  body {
+    font-size: 20px;
+  }
+}

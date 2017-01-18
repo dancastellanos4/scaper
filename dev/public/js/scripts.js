@@ -3,7 +3,7 @@ $(document).ready(function(){
 //  INITS
 //side nave materialize
     // Initialize collapse button
-    $(".button-collapse").sideNav();
+    $(".button-collapse").sideNav({});
     // Initialize collapsible (uncomment the line below if you use the dropdown variation)
     //$('.collapsible').collapsible();
 
@@ -24,6 +24,12 @@ $(document).ready(function(){
         }
     );
 
+    $('.datepicker').pickadate({
+        selectMonths: true, // Creates a dropdown to control month
+        selectYears: 15 // Creates a dropdown of 15 years to control year
+    });
+
+
 
 
 //  TEMP NAV
@@ -43,9 +49,14 @@ $(document).ready(function(){
         $("#page-scaper-level").toggle();
         $("#page-scaper-supplies").toggle();
     });
-    //page four transition
+    //page three transition
     $('#confirm-request').click(function(){
         $('#page-scaper-supplies').toggle();
+        $('#page-homeowner-signup').toggle();
+    });
+    //page four transition
+    $('#submit-h-signup').click(function(){
+        $('#page-homeowner-signup').toggle();
         $('#page-scaper-omw').toggle();
     });
 //    scaper workflow pages
