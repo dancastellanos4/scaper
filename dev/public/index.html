@@ -36,9 +36,9 @@
 <div id="page-start" class="page sky">
     <div class="row grass page">
         <a href="#" data-activates="slide-out" class="button-collapse"><i class="small material-icons ">menu</i></a>
-        <div class="center-align skytext-app-title">Amelia</div>
-        <a class="waves-effect waves-light btn deep-orange darken-4 col s6 offset-s3" id="request-scaper">Test1</a>
-        <a class="waves-effect waves-light btn blue-grey darken-4 col s6 offset-s3" id="find-work">Test 2</a>
+        <div class="center-align skytext-app-title">Scaper</div>
+        <a class="waves-effect waves-light btn deep-orange darken-4 col s6 offset-s3" id="request-scaper">Find a Scaper</a>
+        <a class="waves-effect waves-light btn deep-purple darken-4 col s6 offset-s3" id="find-work">Be a Scaper</a>
     </div>
 
 </div>
@@ -63,10 +63,10 @@
 <!-- task list -->
 <div id="page-task-list" class="page hide-page">
     <div class="row mini-sky">
-        <div class="center-align skytext-app">Cognitive Insurance</div>
+        <div class="center-align skytext-app">What needs to be done?</div>
     </div>
     <div class="row grey-area">
-        <h5 class="center-align instructions blue-grey-text ">explanation</h5>
+        <h5 class="center-align instructions blue-grey-text darken-1 ">I need someone to...</h5>
         <div class="card col s10 offset-s1 checklist">
             <ul id="task-list" class="input-list">
             </ul>
@@ -82,29 +82,50 @@
 <!-- scaper level -->
 <div id="page-scaper-level" class="page hide-page">
     <div class="row mini-sky">
-        <div class="center-align skytext-app">Cognitive Insurance</div>
+        <div class="center-align skytext-app">Scaper Level</div>
     </div>
     <div class="row grey-area">
         <div  class="card col s10 offset-s1 estimate">
             <h6 class="status-text blue-grey-text text-lighten-1 center-align">Quote</h6>
             <h2 class="estimate-text center-align">$15-$25</h2>
         </div>
-        <h5 class="center-align instructions blue-grey-text ">Select one:</h5>
+        <h5 class="center-align instructions blue-grey-text text-darken-1 ">Select one:</h5>
         <div class="button-area col s10 row offset-s1">
-                <input id="level-pro" title="Pro" name="level" type="radio" />
-                <label for="level-pro" class="card col s4 threeCol"><i class="material-icons medium">local_shipping</i><h6>Pro</h6></label>
+                
+                <a id="s-level-pro" class="button card col s4 threeCol Waves waves-effect waves-chartreuse"><i class="material-icons medium">local_shipping</i><h6>Pro</h6></a>
+
+                <a id="s-level-am" class="button card col s4 threeCol Waves waves-effect waves-chartreuse margin-left-1p"><i class="material-icons medium">person</i><h6>Amateur</h6></a>
+
+                <a id="s-level-asap" class="button card col s4 threeCol Waves waves-effect waves-chartreuse margin-left-1p"><i class="material-icons medium">query_builder</i><h6>ASAP</h6></a>
+
+                <!-- <input id="level-pro" title="Pro" name="level" type="radio" />
+                <label id="s-level-pro" for="level-pro" class="card col s4 threeCol Waves waves-effect waves-chartreuse"><i class="material-icons medium">local_shipping</i><h6>Pro</h6></label>
 
                 <input id="level-amateur" title="Amateur" name="level" type="radio"   />
-                <label for="level-amateur" class="card col s4 margin-left-1p threeCol"><i class="material-icons medium">person</i><h6>Amateur</h6></label>
+                <label id="s-level-am" for="level-amateur" class="card col s4 margin-left-1p threeCol"><i class="material-icons medium">person</i><h6>Amateur</h6></label>
 
                 <input id="level-asap" title="Asap" name="level" type="radio"  />
-                <label for="level-asap" class="card col s4 margin-left-1p threeCol"><i class="material-icons medium">query_builder</i><h6>ASAP</h6></label>
+                <label id="s-level-asap" for="level-asap" class="card col s4 margin-left-1p threeCol"><i class="material-icons medium">query_builder</i><h6>ASAP</h6></label> -->
         </div>
-
-        <!-- bottom buttons -->
+       
+        <a class="help waves-effect waves-chartreuse btn-flat blue-grey-text text-darken-1 col s10 offset-s1" id="scaper-supplies-done" href="#helplevel">What's the difference? <i class="material-icons left">help</i></a>
+        <!-- Confirmation Modal -->
+        <div id="helplevel" class="modal bottom-sheet">
+            <div class="modal-content">
+                <h4 class="blue-grey-text text-darken-1">Scaper Levels</h4>
+                <p class="blue-grey-text text-darken-1">Professional Scapers cost the most, but they own all the tools necesary to getb the job done and are usually faster.</p>
+                <p>Amateur Scapers are local guys and gals looking to help out their neighbor for a small price.</p>
+                <p>ASAP - As Soon As Possible no matter who can get here first!</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class=" modal-action modal-close waves-effect waves-light btn-flat">OK</a>
+            </div>
+        </div>
+ 
+         <!-- bottom buttons -->
         <div class="bottom col s12">
             <a class="waves-effect waves-light btn btn-flat col s4 offset-s1 back-button" id="level-back">Back</a>
-            <a class="waves-effect waves-light btn deep-orange darken-4 col s6 next-button" id="scaper-level-done">Next</a>
+            <!-- <a class="waves-effect waves-light btn deep-orange darken-4 col s6 next-button" id="scaper-level-done">Next</a> -->
         </div>
     </div>
 </div>
@@ -119,7 +140,7 @@
             <h6 class="status-text blue-grey-text text-lighten-1 center-align">Quote</h6>
             <h2 class="estimate-text center-align">$25</h2>
         </div>
-        <h5 class="center-align instructions blue-grey-text center-align">Select whose tools to use for each task:</h5>
+        <h5 class="center-align instructions blue-grey-text text-darken-1 center-align">Select whose tools to use for each task:</h5>
 
         <div class="card col s10 offset-s1 checklist">
             <div class="button-area">
@@ -134,13 +155,13 @@
         <!-- bottom buttons -->
         <div class="bottom col s12">
             <a class="waves-effect waves-light btn btn-flat col s4 offset-s1 back-button" id="supplies-back">Back</a>
-            <a class="waves-effect waves-light btn deep-orange darken-4 col s6 next-button" id="scaper-supplies-done" href="#modal1">Request</a>
+            <a class="waves-effect waves-light btn deep-orange darken-4 col s6 next-button" id="scaper-supplies-done" href="#confirm">Request</a>
         </div>
         <!-- Confirmation Modal -->
-        <div id="modal1" class="modal bottom-sheet">
+        <div id="confirm" class="modal bottom-sheet">
             <div class="modal-content">
-                <h4 class="blue-grey-text">Request Confirmation</h4>
-                <p class="blue-grey-text">Confirm to request a Scaper to perform the selected tasks for the price shown.</p>
+                <h4 class="blue-grey-text text-darken-1">Request Confirmation</h4>
+                <p class="blue-grey-text text-darken-1">Confirm to request a Scaper to perform the selected tasks for the price shown.</p>
             </div>
             <div class="modal-footer">
                 <a href="#!" class=" modal-action modal-close waves-effect waves-chartreuse btn-flat" id="confirm-request">Confirm</a>
@@ -151,6 +172,11 @@
 
     </div>
 </div>
+
+<!-- hpow to check if they are logged in or not? -->
+<!-- firebase user management? -->
+<!-- facebnook login?  -->
+
 
 <!-- FTUL -->
 <div id="page-homeowner-signup" class="page hide-page">
@@ -183,22 +209,14 @@
                     <input id="username" type="email" class="validate">
                     <label for="username">email</label>
                 </div>
+
+                <!-- password management -->
                 <div class="input-field s12 ">
                     <i class="material-icons prefix">account_circle</i>
                     <input id="cc" type="email" class="validate">
-                    <label for="cc">email</label>
+                    <label for="cc">password</label>
                 </div>
-
-                <div class="input-field s6 ">
-                    <i class="material-icons prefix">account_circle</i>
-                    <input id="ccsec" type="number" maxlength="3" class="validate">
-                    <label for="ccsec">Security Code</label>
-                </div>
-                <div class="input-field s6 ">
-                    <i class="material-icons prefix">account_circle</i>
-                    <input id="ccexp" type="date" class="datepicker">
-                    <label for="ccexp">Exp Date</label>
-                </div>
+                <!-- place stripe payment system here -->
 
         </div>
     </div>
@@ -248,7 +266,7 @@
         </div>
     </div>
     <div class="row grey-area">
-        <h5 class="center-align instructions blue-grey-text ">I am a(n):</h5>
+        <h5 class="center-align instructions blue-grey-text text-darken-1 ">I am a(n):</h5>
         <div class="button-area col s10 row offset-s1">
             <input id="signup-level-pro" title="Pro" name="signup-level" type="radio" />
             <label for="signup-level-pro" class="card col s4 offset-s1 threeCol"><i class="material-icons medium">local_shipping</i><h6>Pro</h6></label>
@@ -257,7 +275,7 @@
             <label for="signup-level-amateur" class="card col s4 offset-s2 threeCol"><i class="material-icons medium">person</i><h6>Amateur</h6></label>
         </div>
         <div class=" card col s10 offset-s1">
-            <p class="flow-text blue-grey-text">
+            <p class="flow-text blue-grey-text text-darken-1">
                 Professional Scapers are those who  own and transport all equipment just as traditional landscapers would.
                 <strong>This requires the ability to perform ALL standard yard related tasks.</strong>
             </p>
@@ -277,7 +295,7 @@
         </div>
     </div>
     <div class="grey-area row">
-        <h5 class="center-align instructions blue-grey-text">I own:</h5>
+        <h5 class="center-align instructions blue-grey-text text-darken-1">I own:</h5>
         <div id="" class="card col s10 offset-s1 checklist">
             <ul id="scaper-tools-owned" class="input-list">
                 <li>
@@ -314,7 +332,7 @@
                 </li>
             </ul>
         </div>
-        <p class="blue-grey-text center-align">*Scroll to see all options</p>
+        <p class="blue-grey-text text-darken-1 center-align">*Scroll to see all options</p>
         <!-- bottom buttons -->
         <div class="bottom col s12">
             <a class="waves-effect waves-light btn btn-flat col s4 offset-s1 back-button" id="signup-tools-back">Back</a>

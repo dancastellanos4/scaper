@@ -50,13 +50,12 @@ html body {
 }
 
 #signup-page-homeowner{
-  max-height: 50%;
+  max-height: 70vh;
 }
 
 .input-list{
   margin:0;
   overflow: scroll;
-  max-height: 275px;
   li{
     background-color: #f0fff5;
     cursor: pointer;
@@ -111,6 +110,7 @@ html body {
     width:32.333% !important;
     padding-left: 0;
     text-align: center;
+    color:#9e9e9e;
   }
   input{
     position:absolute;
@@ -199,7 +199,6 @@ p {
 .sky {
   margin-bottom: 1px;
   padding-bottom: 0;
-  //background: #000;
   background: #1d70f4; /* Old browsers */
   background: -moz-linear-gradient(-31deg,  #1d70f4 0%, #00a4fd 80%); /* FF3.6-15 */
   background: -webkit-linear-gradient(-31deg,  #1d70f4 0%,#00a4fd 80%); /* Chrome10-25,Safari5.1-6 */
@@ -210,7 +209,11 @@ p {
 
 .mini-sky{
   height: 25%;
-  background: #000;
+  background: #1d70f4; /* Old browsers */
+  background: -moz-linear-gradient(-31deg,  #1d70f4 0%, #00a4fd 80%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-31deg,  #1d70f4 0%,#00a4fd 80%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(149deg,  #1d70f4 0%,#00a4fd 80%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d70f4', endColorstr='#00a4fd',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
   margin-bottom: 1px !important;
   padding-bottom: 0px;
   border-bottom: 1px solid #666;
@@ -300,4 +303,8 @@ p {
 @media (min-width: 993px) {
   body {font-size: 20px}
 
+}
+
+label {
+  color:#787;
 }

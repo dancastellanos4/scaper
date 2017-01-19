@@ -34,40 +34,66 @@ $(document).ready(function(){
 
 //  TEMP NAV
 //    HTML injection step 2
-//  page one transition
-    $("#request-scaper, #task-back").click(function(){
-        $("#page-start").toggle();
-        $("#page-task-list").toggle();
-    });
-    //page two transition
-    $("#tasks-done, #level-back").click(function(){
+var $time= 180;
+    $("#request-scaper, #task-back").click(
+        function(){
+            setTimeout(
+                function(){
+                    $("#page-start").toggle();
+                    $("#page-task-list").toggle();
+                },
+                180);
+        }
+    );
+
+    $("#tasks-done, #level-back").click(
+        function(){
+            setTimeout(
+                function(){
         $("#page-task-list").toggle();
         $("#page-scaper-level").toggle();
-    });
-    //page three transition
-    $("#scaper-level-done, #supplies-back").click(function(){
-        $("#page-scaper-level").toggle();
-        $("#page-scaper-supplies").toggle();
-    });
-    //page three transition
+    },
+                180);
+        }
+    );
+
+    $("#s-level-pro, #s-level-am, #s-level-asap, #supplies-back").click(
+        function(){
+            setTimeout(
+                function(){
+                    $("#page-scaper-level").toggle();
+                    $("#page-scaper-supplies").toggle();
+                },
+                180);
+        }
+    );
+
     $('#confirm-request').click(function(){
+
         $('#page-scaper-supplies').toggle();
         $('#page-homeowner-signup').toggle();
     });
-    //page four transition
+
     $('#submit-h-signup').click(function(){
         $('#page-homeowner-signup').toggle();
         $('#page-scaper-omw').toggle();
     });
+
 //    scaper workflow pages
     $('#find-work, #signup-skill-back').click(function(){
         $('#page-start').toggle();
         $('#page-signup-scaper').toggle();
     });
-    $('#signup-skill-done, #signup-tools-back').click(function(){
+    $('#signup-skill-done, #signup-tools-back').click(
+        function(){
+            setTimeout(
+                function(){
         $('#page-signup-tools').toggle();
         $('#page-signup-scaper').toggle();
-    });
+    },
+                180);
+        }
+    );
 
 
 //task list
@@ -75,11 +101,23 @@ $(document).ready(function(){
     var tsks = {
         "tasks" : [{
             "taskcode" : "mowlawn",
-            "taskname" : "Get Insurance Quote",
+            "taskname" : "Mow the lawn",
             "tasktool" : "mower"
         },{
+            "taskcode" : "plant",
+            "taskname" : "Planting",
+            "tasktool" : "shovel"
+        },{
+            "taskcode" : "weeding",
+            "taskname" : "Pull the weeds",
+            "tasktool" : "trashbag"
+        },{
+            "taskcode" : "rakeleaves",
+            "taskname" : "Rake the leaves",
+            "tasktool" : "rake"
+        },{
             "taskcode" : "plow",
-            "taskname" : "Check My Status",
+            "taskname" : "Plow the driveway",
             "tasktool" : "Plow",
             "taskseason" : "winter"
         }]};
