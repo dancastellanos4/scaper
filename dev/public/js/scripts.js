@@ -105,11 +105,11 @@ var $time= 180;
             "tasktool" : "mower"
         },{
             "taskcode" : "plant",
-            "taskname" : "Planting",
+            "taskname" : "Plant some plants",
             "tasktool" : "shovel"
         },{
             "taskcode" : "weeding",
-            "taskname" : "Pull the weeds",
+            "taskname" : "Weed the weeds",
             "tasktool" : "trashbag"
         },{
             "taskcode" : "rakeleaves",
