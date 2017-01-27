@@ -84,7 +84,7 @@ var $time= 180;
         $('#page-start').toggle();
         $('#page-signup-scaper').toggle();
     });
-    $('#signup-skill-done, #signup-tools-back').click(
+    $('#signup-skill-done, #signup-level-amateur, #signup-tools-back').click(
         function(){
             setTimeout(
                 function(){

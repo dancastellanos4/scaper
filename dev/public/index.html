@@ -108,8 +108,8 @@
                 <label id="s-level-asap" for="level-asap" class="card col s4 margin-left-1p threeCol"><i class="material-icons medium">query_builder</i><h6>ASAP</h6></label> -->
         </div>
        
-        <a class="help waves-effect waves-chartreuse btn-flat blue-grey-text col s10 offset-s1 cen" id="scaper-supplies-done" href="#helplevel">What's the difference? <i class="material-icons left">help</i></a>
-        <!-- Confirmation Modal -->
+        <!-- <a class="help waves-effect waves-chartreuse btn-flat blue-grey-text col s10 offset-s1 cen" id="scaper-supplies-done" href="#helplevel">What's the difference? <i class="material-icons left">help</i></a> -->
+        <!-- help Modal -->
         <div id="helplevel" class="modal bottom-sheet">
             <div class="modal-content">
                 <h4 class="blue-grey-text text-darken-1">Scaper Levels</h4>
@@ -125,6 +125,7 @@
          <!-- bottom buttons -->
         <div class="bottom col s12">
             <a class="waves-effect waves-light btn btn-flat col s4 offset-s1 back-button" id="level-back">Back</a>
+            <a class="help waves-effect waves-chartreuse btn-flat red-text text-darken-2 col s4 offset-s1 " id="scaper-supplies-done" href="#helplevel">Help<i class="material-icons left">help</i></a>
             <!-- <a class="waves-effect waves-light btn deep-orange darken-4 col s6 next-button" id="scaper-level-done">Next</a> -->
         </div>
     </div>
@@ -268,22 +269,46 @@
     <div class="row grey-area">
         <h5 class="center-align instructions blue-grey-text text-darken-1 ">I am a(n):</h5>
         <div class="button-area col s10 row offset-s1">
-            <input id="signup-level-pro" title="Pro" name="signup-level" type="radio" />
+            <!-- <input id="signup-level-pro" title="Pro" name="signup-level" type="radio" />
             <label for="signup-level-pro" class="card col s4 offset-s1 threeCol"><i class="material-icons medium">local_shipping</i><h6>Pro</h6></label>
 
             <input id="signup-level-amateur" title="Amateur" name="signup-level" type="radio"   />
-            <label for="signup-level-amateur" class="card col s4 offset-s2 threeCol"><i class="material-icons medium">person</i><h6>Amateur</h6></label>
+            <label for="signup-level-amateur" class="card col s4 offset-s2 threeCol"><i class="material-icons medium">person</i><h6>Amateur</h6></label> -->
+
+
+            <a href="#proalert" id="signup-level-pro" class="button card col s4 offset-s1 threeCol Waves waves-effect waves-chartreuse"><i class="material-icons medium">local_shipping</i><h6>Pro</h6></a>
+
+            <a id="signup-level-amateur" class="button card col s4 offset-s2 threeCol Waves waves-effect waves-chartreuse Clear"><i class="material-icons medium">person</i><h6>Amateur</h6></a>
         </div>
-        <div class=" card col s10 offset-s1">
-            <p class="flow-text blue-grey-text text-darken-1">
-                Professional Scapers are those who  own and transport all equipment just as traditional landscapers would.
-                <strong>This requires the ability to perform ALL standard yard related tasks.</strong>
-            </p>
+
+        <div id="signuplevel" class="modal bottom-sheet">
+            <div class="modal-content">
+                <h4 class="blue-grey-text text-darken-1">Scaper Levels</h4>
+                <p class="blue-grey-text text-darken-1"><strong>Professional Scapers</strong> cost the most, but they own all the tools necesary to getb the job done and are usually faster.</p>
+                <p class="blue-grey-text text-darken-1"><strong>Amateur Scapers</strong> are local guys and gals looking to help out their neighbor for a small price.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class=" modal-action modal-close waves-effect waves-light btn-flat">OK</a>
+            </div>
+        </div>
+
+        <!--  pro alert modal -->
+        <div id="proalert" class="modal bottom-sheet">
+            <div class="modal-content">
+                <p class="flow-text blue-grey-text text-darken-1">
+                    Professional Scapers are those who  own and transport all equipment just as traditional landscapers would.
+                    <strong>This requires the ability to perform ALL standard yard related tasks.</strong>
+                </p>
+                <div class="modal-footer">
+                    <a href="#!" class=" modal-action modal-close waves-effect waves-chartreuse btn-flat" id="signup-skill-done">Confirm</a>
+                    <a href="#!" class=" modal-action modal-close waves-effect waves-light btn-flat">Cancel</a>
+                </div>
+            </div>
         </div>
         <!-- bottom buttons -->
         <div class="bottom col s12">
             <a class="waves-effect waves-light btn btn-flat col s4 offset-s1 back-button" id="signup-skill-back">Back</a>
-            <a class="waves-effect waves-light btn blue-grey darken-4 col s6 next-button" id="signup-skill-done">Next</a>
+            <a class="help waves-effect waves-chartreuse btn-flat blue-grey-text col s4 offset-s1 center-align" id="scaper-supplies-done" href="#signuplevel">Help<i class="material-icons left">help</i></a>
         </div>
     </div>
 </div>
