@@ -32,66 +32,67 @@ html body {
 /* line 30, ../sass/screen.scss */
 .checklist {
   padding: 0 !important;
+  margin-bottom: 100px;
 }
-/* line 32, ../sass/screen.scss */
+/* line 33, ../sass/screen.scss */
 .checklist ul {
   max-height: 285px;
 }
 
-/* line 36, ../sass/screen.scss */
+/* line 37, ../sass/screen.scss */
 .selected, .button-area input:checked + label {
   background-color: #ccff90 !important;
   color: #000;
 }
 
 /* check fix */
-/* line 42, ../sass/screen.scss */
+/* line 43, ../sass/screen.scss */
 [type="checkbox"]:checked + label:before {
   top: -2px;
   border-right: 5px solid #1b5e20;
   border-bottom: 5px solid #1b5e20;
 }
 
-/* line 48, ../sass/screen.scss */
+/* line 49, ../sass/screen.scss */
 .selected label, .button-area input:checked + label label {
   color: #000 !important;
 }
 
-/* line 52, ../sass/screen.scss */
+/* line 53, ../sass/screen.scss */
 #signup-page-homeowner {
   max-height: 70vh;
 }
 
-/* line 56, ../sass/screen.scss */
+/* line 57, ../sass/screen.scss */
 .input-list {
   margin: 0;
   overflow: scroll;
 }
-/* line 59, ../sass/screen.scss */
+/* line 60, ../sass/screen.scss */
 .input-list li {
   background-color: #f0fff5;
   cursor: pointer;
   padding: 10px 20px;
   border-bottom: 1px solid #cfd8dc;
 }
-/* line 65, ../sass/screen.scss */
+/* line 66, ../sass/screen.scss */
 .input-list li label {
   font-size: 1.1em;
   width: 100%;
 }
-/* line 70, ../sass/screen.scss */
+/* line 71, ../sass/screen.scss */
 .input-list li .task-icon {
   float: right;
 }
 
-/* line 76, ../sass/screen.scss */
+/* line 77, ../sass/screen.scss */
 [type="checkbox"] + label:before {
   margin-top: 3.5px;
   border-color: #a5a5a5;
 }
 
 /* Level page style */
-/* line 83, ../sass/screen.scss */
+/* line 84, ../sass/screen.scss */
 .estimate {
   margin-top: 0 !important;
   margin-bottom: 2vh !important;
@@ -99,132 +100,150 @@ html body {
   padding: 1em !important;
 }
 
-/* line 90, ../sass/screen.scss */
+/* line 91, ../sass/screen.scss */
 .status-text {
   padding-bottom: .8em;
 }
 
 /* hide radio buttons */
-/* line 95, ../sass/screen.scss */
+/* line 96, ../sass/screen.scss */
 [type="radio"]:not(:checked) + label:before, [type="radio"]:not(:checked) + label:after {
   display: none !important;
 }
 
-/* line 99, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 [type="radio"]:checked + label:after, [type="radio"].with-gap:checked + label:before, [type="radio"].with-gap:checked + label:after {
   display: none !important;
 }
 
-/* line 107, ../sass/screen.scss */
+/* line 108, ../sass/screen.scss */
+.tool-buttons {
+  color: #9e9e9e;
+  background-color: #f0fff5;
+}
+
+/* line 114, ../sass/screen.scss */
 .button-area {
   padding: 0 !important;
+  margin-bottom: 100px;
 }
-/* line 109, ../sass/screen.scss */
-.button-area .threeCol {
-  width: 32.333% !important;
+/* line 117, ../sass/screen.scss */
+.button-area .twoCol {
   padding: .5rem;
   text-align: center;
   color: #9e9e9e;
 }
-/* line 115, ../sass/screen.scss */
+/* line 122, ../sass/screen.scss */
+.button-area .threeCol {
+  width: 32.333% !important;
+  padding: .1rem .5rem;
+  text-align: center;
+  color: #9e9e9e;
+}
+/* line 128, ../sass/screen.scss */
 .button-area input {
   position: absolute;
   top: -200px !important;
 }
-/* line 119, ../sass/screen.scss */
+/* line 132, ../sass/screen.scss */
 .button-area label {
   background-color: #f0fff5;
   height: 8em !important;
   padding: 1em !important;
 }
-/* line 124, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 .button-area a {
   background-color: #f0fff5;
 }
 
 /* Supplies page */
 /* Typography */
-/* line 134, ../sass/screen.scss */
+/* line 147, ../sass/screen.scss */
 body {
   font-family: 'Lato',sans-serif;
 }
 
-/* line 138, ../sass/screen.scss */
+/* line 151, ../sass/screen.scss */
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
 }
 
-/* line 143, ../sass/screen.scss */
+/* line 156, ../sass/screen.scss */
 h2 {
   font-weight: 400 !important;
   font-size: 3rem !important;
 }
 
-/* line 147, ../sass/screen.scss */
+/* line 160, ../sass/screen.scss */
 h3 {
   font-size: 1.8rem !important;
 }
 
-/* line 151, ../sass/screen.scss */
+/* line 164, ../sass/screen.scss */
 h4 {
   font-size: 1.6em !important;
   font-weight: 300 !important;
 }
 
-/* line 156, ../sass/screen.scss */
+/* line 169, ../sass/screen.scss */
 h5 {
   font-weight: 300 !important;
   font-size: 1.25em !important;
 }
 
-/* line 160, ../sass/screen.scss */
+/* line 173, ../sass/screen.scss */
 h6 {
   font-weight: 400;
   font-size: 1.25em;
 }
 
-/* line 165, ../sass/screen.scss */
+/* line 178, ../sass/screen.scss */
 p {
   font-weight: 300;
 }
 
-/* line 169, ../sass/screen.scss */
+/* line 182, ../sass/screen.scss */
 .instructions {
   padding-top: 2vh;
   padding-bottom: 1vh;
 }
 
-/* line 174, ../sass/screen.scss */
+/* line 187, ../sass/screen.scss */
 .btn-small {
   height: 25px;
   line-height: 24px;
   font-size: 1rem;
 }
 
-/* line 180, ../sass/screen.scss */
+/* line 193, ../sass/screen.scss */
 .btn-small i {
   font-size: 1rem;
 }
 
 /* margins */
-/* line 185, ../sass/screen.scss */
+/* line 198, ../sass/screen.scss */
 .margin-bottom-1 {
   margin-bottom: 1em;
 }
 
-/* line 189, ../sass/screen.scss */
+/* line 202, ../sass/screen.scss */
 .margin-bottom-2 {
   margin-bottom: 2em;
 }
 
-/* line 193, ../sass/screen.scss */
+/* line 206, ../sass/screen.scss */
 .margin-left-1p {
   margin-left: 1.5% !important;
 }
 
+/* line 210, ../sass/screen.scss */
+.margin-left-5p {
+  margin-left: 5% !important;
+}
+
 /* Sky  headers*/
-/* line 199, ../sass/screen.scss */
+/* line 215, ../sass/screen.scss */
 .sky {
   margin-bottom: 1px;
   padding-bottom: 0;
@@ -240,9 +259,10 @@ p {
   /* IE6-9 fallback on horizontal gradient */
 }
 
-/* line 210, ../sass/screen.scss */
+/* line 226, ../sass/screen.scss */
 .mini-sky {
   height: 25%;
+  min-height: 130px;
   background: #1d70f4;
   /* Old browsers */
   background: -moz-linear-gradient(-31deg, #1d70f4 0%, #00a4fd 80%);
@@ -259,20 +279,26 @@ p {
   position: relative;
 }
 
-/* line 223, ../sass/screen.scss */
+/* line 240, ../sass/screen.scss */
 .grey-area {
   height: 75%;
   background: #f1f1f1;
   padding-top: 3vh;
+  overflow: scroll;
 }
 
-/* line 229, ../sass/screen.scss */
+/* line 248, ../sass/screen.scss */
 .bottom {
+  z-index: 10;
+  background-color: #f1f1f1;
   position: absolute;
-  bottom: 10px;
+  bottom: 0;
+  border-top: 1px solid #ccc;
+  padding-top: 8px !important;
+  height: 55px;
 }
 
-/* line 234, ../sass/screen.scss */
+/* line 258, ../sass/screen.scss */
 .grass {
   background-image: url(../public/images/grasstile.png);
   background-repeat: repeat-x;
@@ -280,7 +306,7 @@ p {
   background-size: 75%;
 }
 
-/* line 242, ../sass/screen.scss */
+/* line 266, ../sass/screen.scss */
 .skytext, .skytext-app-title, .skytext-app {
   font-family: 'OpenSans',sans-serif;
   color: #fff;
@@ -289,15 +315,15 @@ p {
   position: relative;
 }
 
-/* line 250, ../sass/screen.scss */
+/* line 274, ../sass/screen.scss */
 .skytext-app-title {
   letter-spacing: 6px;
   font-size: 3em;
 }
 
-/* line 256, ../sass/screen.scss */
+/* line 280, ../sass/screen.scss */
 .skytext-app {
-  font-size: 2em;
+  font-size: 1.8em;
   line-height: 1.2em;
   position: absolute;
   top: 0;
@@ -309,13 +335,13 @@ p {
   height: 44%;
 }
 
-/* line 270, ../sass/screen.scss */
+/* line 294, ../sass/screen.scss */
 .bubbles {
   margin-top: 12em;
 }
 
 /* Sections */
-/* line 275, ../sass/screen.scss */
+/* line 299, ../sass/screen.scss */
 .segment {
   padding: 7em 0 10em;
   margin-bottom: 1px !important;
@@ -324,7 +350,7 @@ p {
   border-top: 1px solid #c9cbce;
 }
 
-/* line 283, ../sass/screen.scss */
+/* line 307, ../sass/screen.scss */
 .waves-effect.waves-chartreuse .waves-ripple {
   /* The alpha value allows the text and background color
   of the button to still show through. */
@@ -334,51 +360,36 @@ p {
 /* responsiveness */
 /*small*/
 @media (max-width: 600px) {
-  /* line 293, ../sass/screen.scss */
+  /* line 317, ../sass/screen.scss */
   body {
     font-size: 16px;
   }
 }
 /* medium */
 @media (min-width: 601px) and (max-width: 992px) {
-  /* line 299, ../sass/screen.scss */
+  /* line 323, ../sass/screen.scss */
   body {
     font-size: 18px;
   }
 }
 /* large */
 @media (min-width: 993px) {
-  /* line 304, ../sass/screen.scss */
+  /* line 328, ../sass/screen.scss */
   body {
     font-size: 20px;
   }
 }
-/* line 308, ../sass/screen.scss */
+/* line 332, ../sass/screen.scss */
 label {
   color: #787;
 }
 
-/* line 311, ../sass/screen.scss */
+/* line 335, ../sass/screen.scss */
 .modal.bottom-sheet {
   max-height: none !important;
 }
 
-/* line 314, ../sass/screen.scss */
-.row {
-  margin-bottom: 0 !important;
-}
-
-/* line 317, ../sass/screen.scss */
+/* line 341, ../sass/screen.scss */
 .long-page {
   overflow: scroll;
-}
-
-/* line 320, ../sass/screen.scss */
-.long-list {
-  max-height: none !important;
-  position: relative;
-}
-/* line 323, ../sass/screen.scss */
-.long-list a {
-  margin: 10px 0 5px 0;
 }
