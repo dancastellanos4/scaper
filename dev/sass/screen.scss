@@ -31,7 +31,7 @@ overflow:hidden;
   padding: 0 !important;
   margin-bottom: 100px;
   ul{
-    max-height: 285px;
+    max-height: 45vh;
   }
 }
 .selected{
@@ -114,9 +114,10 @@ overflow:hidden;
 .button-area{
   padding:0!important;
   margin-bottom:100px;
-  max-width: 120px;
   .twoCol{
-  padding: .5rem;
+  max-width: 110px;
+    margin-left: 9.2% !important;
+    padding: .5rem;
     text-align: center;
     color:#9e9e9e;
   }
@@ -126,6 +127,7 @@ overflow:hidden;
     text-align: center;
     color:#9e9e9e;
   }
+
   input{
     position:absolute;
     top:-200px !important;
@@ -340,7 +342,7 @@ label {
   //margin-bottom: 0 !important;
 }
 .long-page{
-  overflow:scroll;
+  overflow:hidden;
 }
 //.long-list{
 //  max-height: none !important;
