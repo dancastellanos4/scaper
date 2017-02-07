@@ -1,5 +1,8 @@
 $(document).ready(function(){
 
+    var taskTodo = {};
+    var formDetails = {};
+
 //  INITS
 //side nave materialize
     // Initialize collapse button
@@ -50,6 +53,14 @@ var $time= 180;
         function(){
             setTimeout(
                 function(){
+                    taskTodo.tasks = [];
+
+                    $.each($(".selected input"), function(i,itm){
+                        taskTodo.tasks.push(itm.getAttribute("name"));
+                    });
+
+                    console.log(taskTodo);
+
         $("#page-task-list").toggle();
         $("#page-scaper-level").toggle();
     },
