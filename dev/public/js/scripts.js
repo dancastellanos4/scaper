@@ -69,9 +69,12 @@ var $time= 180;
     );
 
     $("#s-level-pro, #s-level-am, #s-level-asap, #supplies-back").click(
-        function(){
+        function(e){
             setTimeout(
                 function(){
+                //tasks.level = e.currentTarget.getAttribute("id");
+                console.log(e.currentTarget.getAttribute("id"));
+
                     $("#page-scaper-level").toggle();
                     $("#page-scaper-supplies").toggle();
                 },
@@ -79,6 +82,7 @@ var $time= 180;
         }
     );
 
+    
     $('#confirm-request').click(function(){
 
         $('#page-scaper-supplies').toggle();
