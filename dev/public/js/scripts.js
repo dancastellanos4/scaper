@@ -1,8 +1,13 @@
-$(document).ready(function(){
+
+var scaper = (function(boot){
 
     var taskTodo = {};
     var formDetails = {};
 
+
+    $(document).ready(function(){
+
+    
 //  INITS
 //side nave materialize
     // Initialize collapse button
@@ -60,6 +65,7 @@ var $time= 180;
                     });
 
                     console.log(taskTodo);
+                    console.log(boot);
 
         $("#page-task-list").toggle();
         $("#page-scaper-level").toggle();
@@ -73,7 +79,8 @@ var $time= 180;
             setTimeout(
                 function(){
                 //tasks.level = e.currentTarget.getAttribute("id");
-                console.log(e.currentTarget.getAttribute("id"));
+                taskTodo.level = e.currentTarget.getAttribute("id");
+                console.log(taskTodo.level);
 
                     $("#page-scaper-level").toggle();
                     $("#page-scaper-supplies").toggle();
@@ -190,4 +197,10 @@ var $time= 180;
 
 
 });
+
+return {
+    taskTodo:taskTodo
+}
+
+})("test");
 
