@@ -98,7 +98,7 @@ var $time= 180;
 
     $('#submit-h-signup').click(function(){
         $('#page-homeowner-signup').toggle();
-        $('#page-scaper-omw').toggle();
+        $('#page-finding-scaper').toggle();
     });
 
 //    scaper workflow pages
