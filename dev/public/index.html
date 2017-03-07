@@ -97,7 +97,9 @@
                 <a id="s-level-am" class="button card col s4 threeCol Waves waves-effect waves-chartreuse margin-left-1p Clear"><i class="material-icons medium">person</i><h6>Amateur</h6></a>
 
                 <a id="s-level-asap" class="button card col s4 threeCol Waves waves-effect waves-chartreuse margin-left-1p"><i class="material-icons medium">query_builder</i><h6>ASAP</h6></a>
+        </div>
 
+<!-- radio btns old code -->
                 <!-- <input id="level-pro" title="Pro" name="level" type="radio" />
                 <label id="s-level-pro" for="level-pro" class="card col s4 threeCol Waves waves-effect waves-chartreuse"><i class="material-icons medium">local_shipping</i><h6>Pro</h6></label>
 
@@ -106,7 +108,6 @@
 
                 <input id="level-asap" title="Asap" name="level" type="radio"  />
                 <label id="s-level-asap" for="level-asap" class="card col s4 margin-left-1p threeCol"><i class="material-icons medium">query_builder</i><h6>ASAP</h6></label> -->
-        </div>
        
         <!-- <a class="help waves-effect waves-chartreuse btn-flat blue-grey-text col s10 offset-s1 cen" id="scaper-supplies-done" href="#helplevel">What's the difference? <i class="material-icons left">help</i></a> -->
         <!-- help Modal -->
@@ -141,40 +142,60 @@
             <h6 class="status-text blue-grey-text text-lighten-1 center-align">Quote</h6>
             <h2 class="estimate-text center-align">$25</h2>
         </div>
-        <h5 class="instructions blue-grey-text text-darken-1 center-align">Select whose tools to use for each task:</h5>
+        <h5 class="instructions blue-grey-text text-darken-1 center-align">Select whose tools to use:</h5>
+        <div class="button-area col s10 row offset-s1">
 
+            <a id="tools-h" class="button card col s5 Waves waves-effect waves-chartreuse" href="#confirm-tools"><i class="material-icons medium">local_shipping</i><h6>Mine</h6></a>
+
+            <a id="tools-s" class="button card col s5 offset-s2 Waves waves-effect waves-chartreuse Clear"><i class="material-icons medium">person</i><h6>Scaper's</h6></a>
+        </div>
+
+        <!-- Not needed for MVP
         <div class="card col s10 offset-s1 checklist">
             <div class="tool-buttons">
                 <a class="btn btn-flat btn-small s6 col waves-effect waves-light black-text">Clear all</a>
                 <a class="btn btn-flat btn-small s6 col waves-effect waves-chartreuse black-text">Select all</a>
             </div>
             <ul class="input-list">
-                <!-- List has to be generated based on chosen tasks -->
+                List has to be generated based on chosen tasks
             </ul>
-        </div>
+        </div> -->
 
         <!-- bottom buttons -->
         <div class="bottom col s12">
             <a class="waves-effect waves-light btn btn-flat col s4 offset-s1 back-button" id="supplies-back">Back</a>
-            <a class="waves-effect waves-light btn deep-orange darken-4 col s6 next-button" id="scaper-supplies-done" href="#confirm">Request</a>
+            
+            <a class="help waves-effect waves-chartreuse btn-flat red-text text-darken-2 col s5 offset-s1 " id="scaper-supplies-done" href="#help-tools">Help<i class="material-icons left">help</i></a>
         </div>
-        <!-- Confirmation Modal -->
-        <div id="confirm" class="modal bottom-sheet">
+
+<!-- HELP Modal -->
+        <div id="help-tools" class="modal bottom-sheet">
             <div class="modal-content">
-                <h4 class="blue-grey-text text-darken-1">Request Confirmation</h4>
-                <p class="blue-grey-text text-darken-1">Confirm to request a Scaper to perform the selected tasks for the price shown.</p>
+                <h4 class="blue-grey-text text-darken-1">Whose tools to use?</h4>
+                <p class="blue-grey-text text-darken-1">You can choose whether the scaper should bring their own tools for the job, or for a discount we can use the tools that you own at your home!</p>
+                <h3>NOTICE</h3>
+                <p>Please note that you must own the required tools for the jobs requested.  If you chose "mow lawn" and dont own a lawn mower, selecting "Mine" here may incur a penalty and create a road block for us all.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class=" modal-action modal-close waves-effect waves-light btn-flat">OK</a>
+            </div>
+        </div>
+        <div id="confirm-tools" class="modal bottom-sheet">
+            <div class="modal-content">
+                <h4 class="blue-grey-text text-darken-1">Confirm You Own?</h4>
+                <p class="blue-grey-text text-darken-1">You can choose whether the scaper should bring their own tools for the job, or for a discount we can use the tools that you own at your home!</p>
+                <h3>NOTICE</h3>
+                <p>Please note that you must own the required tools for the jobs requested.  If you chose "mow lawn" and dont own a lawn mower, selecting "Mine" here may incur a penalty and create a road block for us all.</p>
             </div>
             <div class="modal-footer">
                 <a href="#!" class=" modal-action modal-close waves-effect waves-chartreuse btn-flat" id="confirm-request">Confirm</a>
                 <a href="#!" class=" modal-action modal-close waves-effect waves-light btn-flat">Cancel</a>
             </div>
         </div>
-
-
     </div>
 </div>
 
-<!-- hpow to check if they are logged in or not? -->
+<!-- how to check if they are logged in or not? -->
 <!-- firebase user management? -->
 <!-- facebnook login?  -->
 
@@ -230,6 +251,19 @@
     </div>
 </div>
 
+<!-- NEED CONFIRMATION PAGE -->
+<!-- Confirmation Modal -->
+      <!--   <div id="confirm" class="modal bottom-sheet">
+            <div class="modal-content">
+                <h4 class="blue-grey-text text-darken-1">Request Confirmation</h4>
+                <p class="blue-grey-text text-darken-1">Confirm to request a Scaper to perform the selected tasks for the price shown.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class=" modal-action modal-close waves-effect waves-chartreuse btn-flat" id="confirm-request">Confirm</a>
+                <a href="#!" class=" modal-action modal-close waves-effect waves-light btn-flat">Cancel</a>
+            </div>
+        </div> -->
+
 
 <!-- Finding Scaper -->
 <div id="page-finding-scaper" class="page hide-page">
@@ -241,16 +275,18 @@
             <h6 class="status-text blue-grey-text text-lighten-1 center-align">Quote</h6>
             <h2 class="estimate-text center-align">$25</h2>
         </div>
-        <div class="row martop-2">
+
+        <!-- Not needed for MVVP
+         <div class="row martop-2">
             <h5 class="instructions blue-grey-text text-darken-1 col  offset-s2">Task:</h5>
             <h5 class="instructions blue-grey-text text-darken-1 col s2 offset-s4">Tools:</h5>
         </div>
         <div class="card col s10 offset-s1 checklist">
             
             <ul class="input-list">
-                <!-- List has to be generated based on chosen tasks -->
+                List has to be generated based on chosen tasks
             </ul>
-        </div>
+        </div> -->
 
         <!-- bottom buttons -->
         <div class="bottom col s12">
