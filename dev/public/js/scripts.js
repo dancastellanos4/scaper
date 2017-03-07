@@ -90,7 +90,7 @@ var $time= 180;
     );
 
     
-    $('#confirm-request').click(function(){
+    $('#confirm-request, #tools-s').click(function(){
 
         $('#page-scaper-supplies').toggle();
         $('#page-homeowner-signup').toggle();
