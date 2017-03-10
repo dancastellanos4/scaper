@@ -74,7 +74,22 @@ var $time= 180;
         }
     );
 
-    $("#s-level-pro, #s-level-am, #s-level-asap, #supplies-back").click(
+$("#s-level-pro").click(
+        function(e){
+            setTimeout(
+                function(){
+                //tasks.level = e.currentTarget.getAttribute("id");
+                taskTodo.level = e.currentTarget.getAttribute("id");
+                console.log(taskTodo.level);
+
+                    $("#page-scaper-level").toggle();
+                    $("#page-homeowner-signup").toggle();
+                },
+                180);
+        }
+    );
+
+    $("#s-level-am, #s-level-asap, #supplies-back").click(
         function(e){
             setTimeout(
                 function(){
@@ -106,12 +121,24 @@ var $time= 180;
         $('#page-start').toggle();
         $('#page-signup-scaper').toggle();
     });
+    
     $('#signup-skill-done, #signup-level-amateur, #signup-tools-back').click(
         function(){
             setTimeout(
                 function(){
         $('#page-signup-tools').toggle();
         $('#page-signup-scaper').toggle();
+    },
+                180);
+        }
+    );
+
+$('#signup-tools-done').click(
+        function(){
+            setTimeout(
+                function(){
+        $('#page-signup-tools').toggle();
+        $('#page-scaper-signup').toggle();
     },
                 180);
         }
@@ -137,6 +164,11 @@ var $time= 180;
             "taskcode" : "rakeleaves",
             "taskname" : "Rake the leaves",
             "tasktool" : "rake"
+        },{
+            "taskcode" : "trim",
+            "taskname" : "Trim the hedges",
+            "tasktool" : "trimmer",
+            "taskseason" : ""
         },{
             "taskcode" : "plow",
             "taskname" : "Plow the driveway",
