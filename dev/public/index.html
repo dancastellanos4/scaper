@@ -91,7 +91,7 @@
         </div>
         <h5 class="center-align instructions blue-grey-text text-darken-1 martop-1">Select one:</h5>
         <div class="button-area col s10 row offset-s1">
-                
+
                 <a id="s-level-pro" class="button card col s4 threeCol Waves waves-effect waves-chartreuse"><i class="material-icons medium">local_shipping</i><h6>Pro</h6></a>
 
                 <a id="s-level-am" class="button card col s4 threeCol Waves waves-effect waves-chartreuse margin-left-1p Clear"><i class="material-icons medium">person</i><h6>Amateur</h6></a>
@@ -108,7 +108,7 @@
 
                 <input id="level-asap" title="Asap" name="level" type="radio"  />
                 <label id="s-level-asap" for="level-asap" class="card col s4 margin-left-1p threeCol"><i class="material-icons medium">query_builder</i><h6>ASAP</h6></label> -->
-       
+
         <!-- <a class="help waves-effect waves-chartreuse btn-flat blue-grey-text col s10 offset-s1 cen" id="scaper-supplies-done" href="#helplevel">What's the difference? <i class="material-icons left">help</i></a> -->
         <!-- help Modal -->
         <div id="helplevel" class="modal bottom-sheet">
@@ -122,7 +122,7 @@
                 <a href="#!" class=" modal-action modal-close waves-effect waves-light btn-flat">OK</a>
             </div>
         </div>
- 
+
          <!-- bottom buttons -->
         <div class="bottom col s12">
             <a class="waves-effect waves-light btn btn-flat col s4 offset-s1 back-button" id="level-back">Back</a>
@@ -164,7 +164,7 @@
         <!-- bottom buttons -->
         <div class="bottom col s12">
             <a class="waves-effect waves-light btn btn-flat col s4 offset-s1 back-button" id="supplies-back">Back</a>
-            
+
             <a class="help waves-effect waves-chartreuse btn-flat red-text text-darken-2 col s5 offset-s1 " id="scaper-supplies-done" href="#help-tools">Help<i class="material-icons left">help</i></a>
         </div>
 
@@ -282,7 +282,7 @@
             <h5 class="instructions blue-grey-text text-darken-1 col s2 offset-s4">Tools:</h5>
         </div>
         <div class="card col s10 offset-s1 checklist">
-            
+
             <ul class="input-list">
                 List has to be generated based on chosen tasks
             </ul>
@@ -294,7 +294,7 @@
             <a class="center-align waves-effect waves-chartreuse btn-flat col s4 offset-s2 " id="finding-edit" href="#">Edit<i class="material-icons left">edit</i></a>
         </div>
         <!-- Confirmation Modal -->
-        
+
     </div>
 </div>
 
@@ -504,13 +504,27 @@
 
 
 
-
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAGkgYeXURRi-ITrEmK3kfroO4Vn0iCxWE",
+    authDomain: "scaper-99c90.firebaseapp.com",
+    databaseURL: "https://scaper-99c90.firebaseio.com",
+    storageBucket: "scaper-99c90.appspot.com",
+    messagingSenderId: "129703791808"
+  };
+  firebase.initializeApp(config);
+</script>
 <script src="js/jquery-3.1.1.min.js"></script>
 <!-- delete local once live
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>  -->
 <script src="js/materialize.min.js"></script>
 <script src="js/scripts.js"></script>
 <!--<script src="../js/handlebars-v4.0.5.js"></script>-->
+<script src="https://www.gstatic.com/firebasejs/3.7.3/firebase.js"></script>
+
+
+
 
 </body>
 </html>

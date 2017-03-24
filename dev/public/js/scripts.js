@@ -1,5 +1,5 @@
 
-var scaper = (function(boot){
+var scaper = (function(fBase){
 
     var taskTodo = {};
     var formDetails = {};
@@ -7,7 +7,7 @@ var scaper = (function(boot){
 
     $(document).ready(function(){
 
-    
+
 //  INITS
 //side nave materialize
     // Initialize collapse button
@@ -104,14 +104,22 @@ $("#s-level-pro").click(
         }
     );
 
-    
+
     $('#confirm-request, #tools-s').click(function(){
+        taskTodo.bringTools = true;
 
         $('#page-scaper-supplies').toggle();
         $('#page-homeowner-signup').toggle();
     });
 
     $('#submit-h-signup').click(function(){
+        var userDetail = {};
+        userDetail.fName = $("#fname").val();
+        userDetail.lName = $("#lname").val();
+        userDetail.eMail =  $("#username").val();
+        userDetail.password = $("#cc").val();
+        taskTodo.userDetail = userDetail;
+        alert("store this in firebase");
         $('#page-homeowner-signup').toggle();
         $('#page-finding-scaper').toggle();
     });
@@ -121,7 +129,7 @@ $("#s-level-pro").click(
         $('#page-start').toggle();
         $('#page-signup-scaper').toggle();
     });
-    
+
     $('#signup-skill-done, #signup-level-amateur, #signup-tools-back').click(
         function(){
             setTimeout(
@@ -234,5 +242,5 @@ return {
     taskTodo:taskTodo
 }
 
-})("test");
+})(firebase);
 
