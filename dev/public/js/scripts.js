@@ -3,7 +3,7 @@ var scaper = (function(fBase){
 
     var taskTodo = {};
     var formDetails = {};
-
+    var db = fBase.database().ref();
 
     $(document).ready(function(){
 
