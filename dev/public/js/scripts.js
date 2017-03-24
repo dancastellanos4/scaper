@@ -239,7 +239,8 @@ $('#signup-tools-done').click(
 });
 
 return {
-    taskTodo:taskTodo
+    taskTodo:taskTodo,
+    dBase: db
 }
 
 })(firebase);
