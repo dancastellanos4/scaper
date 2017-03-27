@@ -3,7 +3,15 @@ var scaper = (function(fBase){
 
     var taskTodo = {};
     var formDetails = {};
-    var db = fBase.database().ref();
+    var userCount;
+    var db = fBase.database().ref().child('users').once('value').then(function(snapshot) {
+  // /var username = snapshot.val().username;
+  console.log(snapshot.val());
+  console.log(JSON.stringify(snapshot.val()[1]));
+  userCount = Object.keys(snapshot.val()).length;
+  // ...
+});
+   // console.log(db);
 
     $(document).ready(function(){
 
@@ -65,7 +73,7 @@ var $time= 180;
                     });
 
                     console.log(taskTodo);
-                    console.log(boot);
+
 
         $("#page-task-list").toggle();
         $("#page-scaper-level").toggle();
@@ -114,12 +122,34 @@ $("#s-level-pro").click(
 
     $('#submit-h-signup').click(function(){
         var userDetail = {};
-        userDetail.fName = $("#fname").val();
-        userDetail.lName = $("#lname").val();
-        userDetail.eMail =  $("#username").val();
+        userDetail.fname = $("#fname").val();
+        userDetail.lname = $("#lname").val();
+        userDetail.email =  $("#username").val();
         userDetail.password = $("#cc").val();
         taskTodo.userDetail = userDetail;
         alert("store this in firebase");
+
+        var newUser ={
+
+                "email":userDetail.email,
+                "first_name":userDetail.fname,
+                "home-tools":true,
+                "homeowner":true,
+                "last_name":userDetail.lname,
+                "s-byo":true,
+                "s-level":taskTodo.level,
+                "scaper":true,
+                "tools":{"hedgetrimmers":true,"lawnmower":true,"plow":false,"rake":true,"shovel":true,"trow":true,"weedwhacker":true},
+                "username":userDetail.email
+
+
+        };
+
+        console.log(newUser);
+        var newKey = userCount;
+
+        firebase.database().ref('users/' + userCount).set(newUser);
+
         $('#page-homeowner-signup').toggle();
         $('#page-finding-scaper').toggle();
     });
