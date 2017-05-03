@@ -2,6 +2,8 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* compass watch /sass/screen.scss : /public/css/screen.css --css-dir=app/css from dev*/
+/* compass compile sass/screen.scss --css-dir=public/css */
 
 //@import "compass/reset";
 
@@ -273,7 +275,7 @@ p {
 }
 
 .grass{
-  background-image: url(../public/images/grasstile.png);
+  background-image: url(../images/grasstile.png);
   background-repeat: repeat-x;
   background-position: bottom;
   background-size: 75%;
@@ -352,6 +354,7 @@ label {
 .modal.bottom-sheet {
   max-height: none !important;
 }
+
 .row{
   //margin-bottom: 0 !important;
 }
