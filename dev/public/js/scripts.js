@@ -4,6 +4,9 @@ var scaper = (function(fBase){
     var taskTodo = {};
     var formDetails = {};
     var userCount;
+    var loginUser = {};
+    loginUser.loginToken = null;
+
     var db = fBase.database().ref().child('users').once('value').then(function(snapshot) {
   // /var username = snapshot.val().username;
   console.log(snapshot.val());
@@ -14,7 +17,7 @@ var scaper = (function(fBase){
    // console.log(db);
 
 var onSignIn = function(guser){
-    alert(guser);
+    //alert(guser);
     var provider = new firebase.auth.GoogleAuthProvider();
 
     firebase.auth().signInWithPopup(provider).then(function(result) {
@@ -22,9 +25,22 @@ var onSignIn = function(guser){
             var token = result.credential.accessToken;
   // The signed-in user info.
             var user = result.user;
+            loginUser.loginToken = token;
+            loginUser.email = user.email;
+            loginUser.firstName = user.displayName.split(' ')[0];
+            loginUser.lastName = user.displayName.split(' ')[1];
+
+            $("#fname").val(loginUser.firstName);
+            $("#lname").val(loginUser.lastName);
+            $("#username").val(loginUser.email);
+            $("#cc").val('password');
+
             console.log(token);
-            alert('welcome pendejo ' +  user.displayName);
-            console.log(user);
+            //alert('welcome pendejo ' +  user.displayName);
+            console.log(result);
+            //email = result.email;
+            //name = result.displayName;
+            //photoURL
   // ...
         }).catch(function(error) {
   // Handle Errors here.
@@ -147,13 +163,17 @@ $("#s-level-pro").click(
     });
 
     $('#submit-h-signup').click(function(){
+        if (!loginUser.loginToken) {
+            onSignIn('onsubmit');
+            return;
+        }
         var userDetail = {};
         userDetail.fname = $("#fname").val();
         userDetail.lname = $("#lname").val();
         userDetail.email =  $("#username").val();
         userDetail.password = $("#cc").val();
         taskTodo.userDetail = userDetail;
-        alert("store this in firebase");
+        //alert("store this in firebase");
 
         var newUser ={
 
